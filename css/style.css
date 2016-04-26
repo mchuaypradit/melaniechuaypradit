@@ -4,41 +4,70 @@ body {
 }
 
 body {
-	background-color: #e6fff2;
+	background-color: #fff;
 	font-family: 'Lato', Arial, sans-serif;
 	font-size: .889rem;
 }
 
-.container {
-	min-height: 100%;
+h1 {
+	margin-bottom: 0;
+}
+
+/*.container {
+	height: 100%;
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	flex-direction: column;
+	background-color: lightblue;
+}*/
+
+.name {
+	width: 100%;
+	padding: 2rem 1rem 0;
+	background-color: white;
 }
 
-.hello {
-	font-weight: 700;
+.firstname, .lastname {
+	padding: 0;
+}
+
+.firstname h1 {
+	background-color: inherit;
+	font-size: 2.5rem;
+	font-weight: bolder;
+	letter-spacing: 3px;
+}
+
+.lastname h1 {
+	padding-left: 2rem;
+	background-color: inherit;
+	font-size: 2.5rem;
+	font-weight: bolder;
+	letter-spacing: 2.5px;
+}
+
+/*.multitriangle img {
+	margin: 0 auto;
+	float: left;
+}*/
+
+.multitriangle  {
 	text-align: center;
-	color: rgba(128, 128, 128, 0.6);
-    text-shadow: 1px 4px 6px #e6fff2, 0 0 0 #000, 1px 4px 6px #e6fff2;
-	letter-spacing: 1px;
+	padding: 0;
+	/*transform: rotate(90deg);*/
 }
-
 /*********************************
 Pseudo-classes
 *********************************/
 
 a:link {
-	font-size: 2rem;
-	color: inherit;
-	text-decoration: none;
+
 }
 
 a:hover {
-	color: rgba(255, 255, 255, 0.7);
-    text-shadow: 1px 4px 6px #e6fff2, 0 0 0 #000, 1px 4px 6px #e6fff2;
+	
 
-};
+}
 
 /*********************************
 Media Queries

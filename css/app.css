@@ -1,76 +1,211 @@
-/*****************************
-General Styling 
-******************************/
+html,
+body {
+	-webkit-text-size-adjust: none;
+	height: 100%;
+}
 
 body {
-	background-color: none;
-	font-family: 'Raleway', Arial, sans-serif;
-	font-size: 1rem;
-}
-
-html, body {
-    position: relative;
-    height: 100%;
+	background-color: #fff;
+	font-family: 'Lato', Arial, sans-serif;
+	font-size: .889rem;
 }
 
 
-p.footer {
-	text-align: right;
-	margin: 10px 10px;
-	font-size: .707rem;
-	font-weight: bold;
-}
-
-/*****************************
-Psuedo Classes
-******************************/
-
-
-
-/*****************************
-Body Styling 
-******************************/
 h1 {
-	font-family: 'Quicksand', Arial, sans-serif;
-	font-size: 1.1rem;
+	margin-bottom: 0;
+}
+
+/*.container {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	background-color: lightblue;
+}*/
+
+.topsection {
+	min-height: 100%;
+}
+
+.name {
+	text-align: center;
+	padding: 1rem 1rem .5rem;
+	background-color: white;
+}
+
+.firstname, .lastname {
+	padding: 0;
+}
+
+.firstname h1,
+.lastname h1 {
+	/*font-family: 'Open Sans', Arial, sans-serif;*/
+	background-color: inherit;
+	font-size: 2.5rem;
+	font-weight: bolder;
+	letter-spacing: 2px;
+	line-height: 90%;
+}
+
+/*.lastname h1 {
+	text-align: right;
+	background-color: inherit;
+	font-size: 2.5rem;
+	font-weight: bolder;
+	letter-spacing: 2.5px;
+	line-height: 90%;
+}*/
+
+/*.multitriangle img {
+	margin: 0 auto;
+	float: left;
+}*/
+
+.multitriangle {
+	text-align: center;
+	padding: 0;
+	/*transform: rotate(90deg);*/
+}
+
+.title h2 {
+	text-align: center;
+	font-size: 1.3rem;
+	font-family: 'Lato', Arial, sans-serif;
+	font-weight: lighter;
+}
+
+.menu-list {
+	margin-top: 1rem;
+	padding: 1rem;
+}
+
+.hello h1,
+.past-life h1,
+.skills h1,
+.projects h1,
+.interests h1,
+.contact h1 {
+	text-align: center;
+	font-size: 1.8rem;
+	font-weight: bolder;
+}
+
+.hello h1 {color: #AB1F63;}
+.past-life h1 {color: #4E1E58;}
+.skills h1 {color: #BC7FAC;}
+.projects h1 {color: #BC7FAC;}
+/*.interests h1 {color: #AFD252;}*/
+.contact h1 {color: #AFD252;}
+
+.hello-main,
+.past-life-main,
+.skills-main,
+.interests-main {
+	min-height: 100%;
+	color: #fff;
+	padding: 0rem 1rem 2.5rem;
+}
+.contact-main {min-height: 100%;}
+
+.hello-main {background-color: #AB1F63;}
+.past-life-main {background-color: #4E1E58;}
+.skills-main {background-color: #BC7FAC;}
+.contact-main {background-color: #CCE08C;}
+
+.hello-main h1,
+.past-life-main h1,
+.skills-main h1,
+.interests-main h1 {
+	color: #fff;
+	font-size: 2rem;
+	letter-spacing: 2px;
+}
+.contact-main h1 {
+	color: #fff;
+	font-size: 2rem;
+	letter-spacing: 2px;
+}
+
+.past-life-main h1,
+.skills-main h1,
+.interests-main h1,
+.contact-main h1 {
+	padding: 1rem 0rem;
+}
+
+.hello-content,
+.past-life-content {
+	padding: 1rem;
+	font-size: 1rem;
+	text-indent: 20px;
+	text-align: left;
+	word-spacing: 1px;
+}
+
+.job-history {
+	text-align: left;
+	/*height: 25rem;
+	overflow: scroll;*/
+}
+
+.interests-content {color: #000;}
+
+.job-history ul {list-style-type: square;}
+
+.contact-main ul {
+	list-style-type: none;
+	text-align: left;
+	font-size: 2rem;
+	margin-left: 1rem;
+	line-height: 2.5rem;
+}
+
+.contact-links ul {
+	padding-left: 0;
+}
+
+.job-date,
+.school {
 	font-weight: bold;
-	margin: 1.3rem 0 0 0;
-	text-align: center;
+}
 
+p.job-date,
+p.job-title,
+p.school {
+	margin-bottom: 0;
+}
+
+.job-title,
+.degree {
+	font-style: italic;
+}
+
+i {
+	color: #fff;
+}
+/*********************************
+Pseudo-classes
+*********************************/
+
+a:link,
+a:visited {
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #323A13;
+	font-size: .889rem;
+	vertical-align: middle;
+	padding-left: 1rem;
 
 }
 
-.small-header {
-	height: 800px;
-	background: url(../img/reikisite_small.svg) no-repeat;
-	background-size: cover;
-
+a:hover {
+	color: #ECF4CB;
 }
 
-.intro {
-	padding-bottom: 3rem;
-	text-align: center;
-}
-
-.lovely {
-	background-color: none;
-	margin-top: 10rem;
-	padding: 1px;
- 	text-align: center;
-}
-
-
-/*****************************
-Media Queries 
-******************************/	
-
-@media screen and (min-width: 39em) and (max-width: 63em) {
-
-	.lovely {
-		margin-top: 5rem;
-
-	}
-
-
+/*********************************
+Media Queries
+*********************************/
+@media and screen (min-width: 20rem) and (max-width: 30rem) {
 
 }
