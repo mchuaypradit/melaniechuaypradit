@@ -12,20 +12,33 @@ body {
 
 
 h1 {
+	font-family: 'Lato', Arial, sans-serif;
+	font-weight: bolder;
 	margin-bottom: 0;
 }
 
-/*.container {
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	background-color: lightblue;
-}*/
-
-.topsection {
-	min-height: 100%;
+.center {
+	text-align: center;
+	padding: 0;
+	/*transform: rotate(90deg);*/
 }
+
+/*********************************
+Body Styling
+*********************************/
+
+.main-menu {
+	padding: 2rem 1rem 1rem;
+	margin-left: 0;
+	list-style-type: none;
+	text-align: center;
+	font-size: 1.8rem;
+	font-weight: bolder;
+}
+
+/*.topsection {
+	min-height: 100%;
+}*/
 
 .name {
 	text-align: center;
@@ -47,26 +60,6 @@ h1 {
 	line-height: 90%;
 }
 
-/*.lastname h1 {
-	text-align: right;
-	background-color: inherit;
-	font-size: 2.5rem;
-	font-weight: bolder;
-	letter-spacing: 2.5px;
-	line-height: 90%;
-}*/
-
-/*.multitriangle img {
-	margin: 0 auto;
-	float: left;
-}*/
-
-.multitriangle {
-	text-align: center;
-	padding: 0;
-	/*transform: rotate(90deg);*/
-}
-
 .title h2 {
 	text-align: center;
 	font-size: 1.3rem;
@@ -74,54 +67,28 @@ h1 {
 	font-weight: lighter;
 }
 
-.menu-list {
-	margin-top: 1rem;
-	padding: 1rem;
-}
-
-.hello h1,
-.past-life h1,
-.skills h1,
-.projects h1,
-.interests h1,
-.contact h1 {
-	text-align: center;
-	font-size: 1.8rem;
-	font-weight: bolder;
-}
-
-.hello h1 {color: #AB1F63;}
-.past-life h1 {color: #4E1E58;}
-.skills h1 {color: #BC7FAC;}
-.projects h1 {color: #BC7FAC;}
-/*.interests h1 {color: #AFD252;}*/
-.contact h1 {color: #AFD252;}
-
 .hello-main,
 .past-life-main,
 .skills-main,
-.interests-main {
-	min-height: 100%;
+.contact-main {
+/*	min-height: 100%;*/
 	color: #fff;
-	padding: 0rem 1rem 2.5rem;
+	padding: 0rem 1rem 5rem;
 }
-.contact-main {min-height: 100%;}
 
-.hello-main {background-color: #AB1F63;}
+.hello-main 	{background-color: #AB1F63;}
 .past-life-main {background-color: #4E1E58;}
-.skills-main {background-color: #BC7FAC;}
-.contact-main {background-color: #CCE08C;}
+.skills-main 	{background-color: #BC7FAC;}
+.contact-main 	{background-color: #CCE08C;}
 
 .hello-main h1,
 .past-life-main h1,
 .skills-main h1,
-.interests-main h1 {
-	color: #fff;
-	font-size: 2rem;
-	letter-spacing: 2px;
-}
+.interests-main h1,
 .contact-main h1 {
+	text-align: center;
 	color: #fff;
+	font-weight: bold;
 	font-size: 2rem;
 	letter-spacing: 2px;
 }
@@ -132,13 +99,27 @@ h1 {
 .contact-main h1 {
 	padding: 1rem 0rem;
 }
+.pic img {
+	margin-top: 1rem;
+	border-radius: 50%;
+}
+.hello-intro {
+	font-family: 'Old Standard TT', serif;
+	letter-spacing: .3px;
+	margin: 1rem 0rem 0rem;
+	line-height: 1.6rem;
+	font-size: 1.4rem;
+	font-style: italic;
+	text-indent: 20px;
+	text-align: justify;
+}
 
 .hello-content,
 .past-life-content {
-	padding: 1rem;
+	padding: 1.2rem;
 	font-size: 1rem;
 	text-indent: 20px;
-	text-align: left;
+	text-align: justify;
 	word-spacing: 1px;
 }
 
@@ -148,21 +129,7 @@ h1 {
 	overflow: scroll;*/
 }
 
-.interests-content {color: #000;}
-
 .job-history ul {list-style-type: square;}
-
-.contact-main ul {
-	list-style-type: none;
-	text-align: left;
-	font-size: 2rem;
-	margin-left: 1rem;
-	line-height: 2.5rem;
-}
-
-.contact-links ul {
-	padding-left: 0;
-}
 
 .job-date,
 .school {
@@ -183,29 +150,320 @@ p.school {
 i {
 	color: #fff;
 }
+
+.code {
+	text-align: right;
+}
+
+.adobe {
+	text-align: left;
+	padding-top: 1.5rem;
+}
+
+.projects-main {
+	padding-top: 1px;
+/*	display: flex;
+	flex-direction: column;
+	justify-content: center;*/
+}
+
+.projects-main p {
+	margin-bottom: 0rem;
+	text-align: left;
+}
+
+.projects-main p:first-child {
+	font-style: italic;
+}
+.projects-main :last-child {
+	margin-bottom: .5rem;
+}
+
+.projects-main :nth-child(2) {
+	font-weight: normal;
+	word-spacing: 2px;
+}
+
+.desktop {padding-top: 1rem;}
+
+.desktop img {
+	border: 1px solid #D59CC7;
+	width: 60%;
+}
+
+
+.contact-main ul {
+	list-style-type: none;
+	text-align: left;
+	font-size: 2rem;
+	margin-left: 1rem;
+	line-height: 2.5rem;
+}
+
+.contact-links ul {
+	padding-left: 0;
+}
+
 /*********************************
 Pseudo-classes
 *********************************/
 
-a:link,
-a:visited {
+
+.main-menu a.pink:link, .main-menu a.pink:visited 			{color: #AB1F63;}
+.main-menu a.purple:link, .main-menu a.purple:visited 		{color: #4E1E58;}
+.main-menu a.lavender:link, .main-menu a.lavender:visited 	{color: #BC7FAC;}
+.main-menu a.green:link, .main-menu a.green:visited 		{color: #AFD252;}
+
+.main-menu a.pink:hover {
+	background-color: #AB1F63;
+	padding: 5px 110px;
+	border: 2px solid #AB1F63;
+	color: #fff;
+}
+
+.main-menu a.purple:hover {
+	background-color: #4E1E58;
+	padding: 5px 100px;
+	border: 2px solid #4E1E58;
+	color: #fff;
+}
+
+.main-menu a.lavender:hover {
+	background-color: #BC7FAC;
+	padding: 5px 100px;
+	border: 2px solid #BC7FAC;
+	color: #fff;
+}
+
+.main-menu a.green:hover {
+	background-color: #AFD252;
+	padding: 5px 100px;
+	border: 2px solid #AFD252;
+	color: #fff;
+}
+
+.projects-main a:link,
+.projects-main a:visited {
+	color: #fff;
+	text-align: left;
+	font-weight: bold;
+}
+
+.projects-main a:hover {
+	text-decoration: underline;
+}
+
+.contact-main a:link,
+.contact-main a:visited {
 	font-family: 'Open Sans', Arial, sans-serif;
 	font-weight: bold;
 	text-transform: uppercase;
 	color: #323A13;
-	font-size: .889rem;
+	font-size: 12px;
 	vertical-align: middle;
 	padding-left: 1rem;
 
 }
 
-a:hover {
+.contact-main a:hover {
 	color: #ECF4CB;
 }
 
 /*********************************
 Media Queries
 *********************************/
-@media and screen (min-width: 20rem) and (max-width: 30rem) {
+
+/*768px to 1024px*/
+@media screen and (min-width: 48em) and (max-width: 64em) {
+	.name 			{padding-top: 10rem;}
+	.main-menu 		{padding-top: 2rem;}		
+	.hello-main 	{padding: 0rem 8rem;}
+	.hello-intro 	{padding-top: 2rem;}
+	.hello-content 	{padding-top: 2rem;}
+	.job-history 	{padding: 1rem 4rem;}
+	.projects-main 	{padding: 0rem 9rem;}
+	.desktop 		{text-align: right;}
+	.contact-links 	{padding: 2rem 13rem;}
 
 }
+
+/*1024 to 1280px*/
+@media screen and (min-width: 64em) and (max-width: 80em) {
+	.top-triangle	{text-align: center;}
+	.name 			{padding-top: 5rem;}
+	.main-menu 		{padding-top: 2rem;}		
+	.hello-main 	{padding: 0rem 8rem;}
+	.hello-intro 	{padding-top: 2rem;}
+	.hello-content 	{padding-top: 2rem;}
+	.job-history 	{padding: 1rem 4rem;}
+	.projects-main 	{padding: 0rem 9rem;}
+	.desktop 		{text-align: center;}
+	.contact-links 	{padding: 2rem 10rem;}
+
+}
+
+/*1280px to 1600px*/
+@media screen and (min-width: 80em) and (max-width: 100em) {
+	.top-triangle	{text-align: center;}
+	.name 			{padding-top: 5rem;}
+	.main-menu 		{padding-top: 2rem;}		
+	.hello-main 	{padding: 0rem 8rem 5rem;}
+	.hello-intro 	{padding: 2rem 5rem 0rem;
+					text-align: center;}
+	.hello-content 	{padding: 2rem 5rem 4rem;
+					font-size: .889rem;}
+	.job-history 	{padding: 1rem 15rem;}
+	.projects-main 	{padding: 0rem 15rem;}
+	.desktop 		{text-align: center;}
+	.contact-links 	{padding: 2rem 26rem;}
+}
+
+/*1600px to 1920px*/
+@media screen and (min-width: 100em) and (max-width: 120em) {
+	.top-triangle	{text-align: center;}
+	.name 			{padding-top: 10rem;}
+	.main-menu 		{padding-top: 2rem;}		
+	.hello-main 	{padding: 0rem 8rem 5rem;}
+	.hello-intro 	{padding-top: 2rem;}
+	.hello-content 	{padding-top: 2rem;}
+	.job-history 	{padding: 1rem 4rem;}
+	.projects-main 	{padding: 0rem 9rem;}
+	.desktop 		{text-align: center;}
+	.contact-links 	{padding: 2rem 15rem;}
+}
+
+/*1920px to 2560px*/
+@media screen and (min-width: 120em) and (max-width: 160em) {
+	.top-triangle	{text-align: center;}
+	.name 			{padding-top: 10rem;}
+	.main-menu 		{padding: 4rem 0rem;}	
+	.hello-main 	{padding: 0rem 8rem 5rem;}
+	.hello-intro 	{padding: 2rem 10rem 0rem;
+					text-align: center;}
+	.hello-content 	{padding: 2rem 10rem 0rem;}
+	.job-history 	{padding: 1rem 10rem;}
+	.projects-main 	{padding: 0rem 20rem;}
+	.desktop 		{text-align: center;}
+	.contact-links 	{padding: 2rem 25rem;}
+}
+
+/*@media screen and (min-width: 80em) and (max-width: 100em) {
+	.name 			{padding-top: 5rem;}
+	.firstname h1	{font-size: 3rem;
+					-webkit-transform: rotate(90deg);
+					transform: rotate(90deg); 
+					padding-top: 2.3rem; 
+					padding-left: 4rem;}
+	.lastname h1	{font-size: 3rem;
+					-webkit-transform: rotate(270deg);
+					transform: rotate(270deg); 
+					padding-top: 2.7rem;
+					padding-right: 2.2rem;}
+	.title h2		{font-size: 1.5rem;
+					-webkit-transform: translateX(-9rem);
+					transform: translate(-9rem, 1rem);}
+	.main-menu		{padding: 0rem;					
+					width: 20%;
+					text-align: left;
+					-webkit-transform: translateX(43rem);
+					transform: translateX(43rem);}
+	.top-triangle	{padding-left: 2px;
+					text-align: center;
+					transform: translateX(-1px);}
+	.hello-main		{padding: 0rem 13rem;}
+	.hello-intro 	{font-size: 1.2rem;}
+	.hello-content 	{font-size: .889rem;}
+	.job-history 	{padding: 1rem 12rem;}
+	.projects-main 	{padding: 0rem 10.5rem;}
+	.desktop 		{text-align: center;}
+	.desktop img 	{width: 60%;}
+	.mobile 		{text-align: left;}
+	.mobile img 	{width: 55%;}
+	.contact-links 	{padding: 1rem 27rem;}
+
+	.main-menu a.pink:hover { 	text-align: left;
+								background-color: #AB1F63;
+								padding: 5px 130px 5px 5px;
+								border: 2px solid #AB1F63;
+								color: #fff; }
+
+	.main-menu a.purple:hover { 	text-align: left;
+								background-color: #4E1E58;
+								padding: 5px 100px 5px 5px;
+								border: 2px solid #4E1E58;
+								color: #fff; }
+
+	.main-menu a.lavender:hover { 	text-align: left;
+								background-color: #BC7FAC;
+								padding: 5px 100px 5px 5px;
+								border: 2px solid #BC7FAC;
+								color: #fff; }
+
+	.main-menu a.green:hover { 	text-align: left;
+								background-color: #AFD252;
+								padding: 5px 100px 5px 5px;
+								border: 2px solid #AFD252;
+								color: #fff; }
+}*/
+/*1600px to 2560px*/
+/*@media screen and (min-width: 100em) and (max-width: 160em) {
+	.name 			{padding-top: 18rem;}
+	.firstname h1	{font-size: 3rem;
+					-webkit-transform: rotate(90deg);
+					transform: rotate(90deg); 
+					padding-top: 2.3rem; 
+					padding-left: 4rem;}
+	.lastname h1	{font-size: 3rem;
+					-webkit-transform: rotate(270deg);
+					transform: rotate(270deg); 
+					padding-top: 2.7rem;
+					padding-right: 2.2rem;}
+	.title h2		{font-size: 1.5rem;
+					-webkit-transform: translateX(-9rem);
+					transform: translate(-9rem, 1rem);}
+	.main-menu		{padding: 0rem;					
+					width: 20%;
+					text-align: left;
+					-webkit-transform: translateX(63rem);
+					transform: translateX(63rem);}
+	.top-triangle	{padding-left: 2px;
+					padding-top: 5rem;
+					text-align: center;
+					transform: translateX(-1px);}
+	.hello-main		{padding: 0rem 13rem;}
+	.hello-intro 	{font-size: 1.2rem;
+					text-align: center;}
+	.hello-content 	{font-size: .889rem;}
+	.job-history 	{padding: 1rem 12rem;}
+	.projects-main 	{padding: 0rem 10.5rem;}
+	.desktop 		{text-align: center;}
+	.desktop img 	{width: 60%;}
+	.mobile 		{text-align: left;}
+	.mobile img 	{width: 55%;}
+	.contact-links 	{padding: 1rem 27rem;}
+
+	.main-menu a.pink:hover { 	text-align: left;
+								background-color: #AB1F63;
+								padding: 5px 130px 5px 5px;
+								border: 2px solid #AB1F63;
+								color: #fff; }
+
+	.main-menu a.purple:hover { 	text-align: left;
+								background-color: #4E1E58;
+								padding: 5px 100px 5px 5px;
+								border: 2px solid #4E1E58;
+								color: #fff; }
+
+	.main-menu a.lavender:hover { 	text-align: left;
+								background-color: #BC7FAC;
+								padding: 5px 100px 5px 5px;
+								border: 2px solid #BC7FAC;
+								color: #fff; }
+
+	.main-menu a.green:hover { 	text-align: left;
+								background-color: #AFD252;
+								padding: 5px 100px 5px 5px;
+								border: 2px solid #AFD252;
+								color: #fff; }
+
+}*/
