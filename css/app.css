@@ -36,10 +36,6 @@ Body Styling
 	font-weight: bolder;
 }
 
-/*.topsection {
-	min-height: 100%;
-}*/
-
 .name {
 	text-align: center;
 	padding: 1rem 1rem .5rem;
@@ -71,7 +67,6 @@ Body Styling
 .past-life-main,
 .skills-main,
 .contact-main {
-/*	min-height: 100%;*/
 	color: #fff;
 	padding: 0rem 1rem 5rem;
 }
@@ -125,8 +120,6 @@ Body Styling
 
 .job-history {
 	text-align: left;
-	/*height: 25rem;
-	overflow: scroll;*/
 }
 
 .job-history ul {list-style-type: square;}
@@ -162,9 +155,6 @@ i {
 
 .projects-main {
 	padding-top: 1px;
-/*	display: flex;
-	flex-direction: column;
-	justify-content: center;*/
 }
 
 .projects-main p {
@@ -184,11 +174,12 @@ i {
 	word-spacing: 2px;
 }
 
-.desktop {padding-top: 1rem;}
+.desktop {	padding-top: 1rem;
+			text-align: center;}
 
 .desktop img {
 	border: 1px solid #D59CC7;
-	width: 60%;
+	width: 90%;
 }
 
 
@@ -281,8 +272,8 @@ Media Queries
 	.hello-intro 	{padding-top: 2rem;}
 	.hello-content 	{padding-top: 2rem;}
 	.job-history 	{padding: 1rem 4rem;}
+	.desktop img 	{width: 70%}
 	.projects-main 	{padding: 0rem 9rem;}
-	.desktop 		{text-align: right;}
 	.contact-links 	{padding: 2rem 13rem;}
 
 }
@@ -292,12 +283,13 @@ Media Queries
 	.top-triangle	{text-align: center;}
 	.name 			{padding-top: 5rem;}
 	.main-menu 		{padding-top: 2rem;}		
-	.hello-main 	{padding: 0rem 8rem;}
+	.hello-main 	{padding: 0rem 8rem 5rem;
+					border-bottom: 2px solid #fff;}
 	.hello-intro 	{padding-top: 2rem;}
 	.hello-content 	{padding-top: 2rem;}
 	.job-history 	{padding: 1rem 4rem;}
+	.desktop img 	{width: 50%}
 	.projects-main 	{padding: 0rem 9rem;}
-	.desktop 		{text-align: center;}
 	.contact-links 	{padding: 2rem 10rem;}
 
 }
@@ -313,8 +305,8 @@ Media Queries
 	.hello-content 	{padding: 2rem 5rem 4rem;
 					font-size: .889rem;}
 	.job-history 	{padding: 1rem 15rem;}
+	.desktop img 	{width: 50%}
 	.projects-main 	{padding: 0rem 15rem;}
-	.desktop 		{text-align: center;}
 	.contact-links 	{padding: 2rem 26rem;}
 }
 
@@ -327,8 +319,8 @@ Media Queries
 	.hello-intro 	{padding-top: 2rem;}
 	.hello-content 	{padding-top: 2rem;}
 	.job-history 	{padding: 1rem 4rem;}
+	.desktop img 	{width: 70%}
 	.projects-main 	{padding: 0rem 9rem;}
-	.desktop 		{text-align: center;}
 	.contact-links 	{padding: 2rem 15rem;}
 }
 
@@ -342,8 +334,8 @@ Media Queries
 					text-align: center;}
 	.hello-content 	{padding: 2rem 10rem 0rem;}
 	.job-history 	{padding: 1rem 10rem;}
+	.desktop img 	{width: 70%}
 	.projects-main 	{padding: 0rem 20rem;}
-	.desktop 		{text-align: center;}
 	.contact-links 	{padding: 2rem 25rem;}
 }
 
