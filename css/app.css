@@ -266,7 +266,7 @@ Media Queries
 
 /*768px to 1024px*/
 @media screen and (min-width: 48em) and (max-width: 64em) {
-	.name 			{padding-top: 10rem;}
+	.name 			{padding-top: 5rem;}
 	.main-menu 		{padding-top: 2rem;}		
 	.hello-main 	{padding: 0rem 8rem;}
 	.hello-intro 	{padding-top: 2rem;}
@@ -283,8 +283,7 @@ Media Queries
 	.top-triangle	{text-align: center;}
 	.name 			{padding-top: 5rem;}
 	.main-menu 		{padding-top: 2rem;}		
-	.hello-main 	{padding: 0rem 8rem 5rem;
-					border-bottom: 2px solid #fff;}
+	.hello-main 	{padding: 0rem 8rem 5rem;}
 	.hello-intro 	{padding-top: 2rem;}
 	.hello-content 	{padding-top: 2rem;}
 	.job-history 	{padding: 1rem 4rem;}
